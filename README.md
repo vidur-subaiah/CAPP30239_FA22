@@ -2,7 +2,7 @@
 Data Visualization for Policy Analysis
 
 ## Introduction
-This is the repository created by Vidur Subaiah for work associated with the 'Data Visualization for Public Policy' class (CAPP 30329) offered at UChicago. 
+This is the repository created by Vidur Subaiah for work associated with the 'Data Visualization for Public Policy' class (CAPP 30239) offered at UChicago. 
 
 ## About the Class
 The class covers data visualization design, theory, and practices, as well as projects that utilize data visualization tools (primarily D3.js). 
