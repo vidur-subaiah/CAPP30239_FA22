@@ -25,7 +25,7 @@ Most of the data points within the file would be utilized, which include the fol
 * Film languages
 
 ## Any concerns about the data?
-One of the concerns about the data would be the data collection method. The csv file was created by an individual who scraped data from Wikipedia and then combine it with IMDB data. While these two sources of data are mostly reliable, there could potentially have been errors or omissions during the data scraping process. Another concern about the data would be the possibility that there are no real trends or relationships betwen the categorical variables, which would limit the number of insights that can be drawn from the data. 
+One of the concerns about the data would be the data collection method. The csv file was created by an individual who scraped data from Wikipedia and then combined it with IMDB data. While these two sources of data are mostly reliable, there could potentially have been errors or omissions during the data scraping process. Another concern about the data would be the possibility that there are no real trends or relationships between the categorical variables, which would limit the number of insights that can be drawn from the data. 
 
 ## Primary or Secondary Source?
 The data is partly secondary in nature since the data about the Netflix Originals was obtained from Wikipedia instead of Netflix itself. However, the IMDB ratings have been obtained directly from the IMDB pages for the respective titles. 
