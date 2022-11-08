@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Visits by Neighborhood</title>
+    <style>
+        svg {
+            width: 100%;
+            height: 100vh;
+        }
+        text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Police Shootings Data Exploration</h1>
+    <h3>Number of Police Shootings by Age Group</h3>
+    <p>I chose this histogram to represent the age groups involved in police shootings. The histogram
+        allows us to clearly see that individuals between the ages of 20-30 were the most 
+        involved in shootings. Further information that breaks down this age group by gender or race would
+        be helpful in this visualization.
+    </p>
+    <div id="chart1"></div>
+    <h3>Number of Police Shootings by Race</h3>
+    <p>
+        I chose this bar chart to represent the races involved in police shootings. The bar chart allows us to 
+        clearly see which races were the most involved in shooting incidents (white and black in this data). Further demographic 
+        information that highlights more about the people within the respective races could be useful. 
+    </p>
+    <div id="chart2"></div>
+    <h3>Number of Police Shootings by Gender</h3>
+    <p>
+        I chose this pie chart to break down the police shootings by gender. The pie chart allows us to clearly see
+        which gender is the most involved in shootings (male in this data) (the chart was also strengthened by only having three categories
+        which helped make the point even clearer). Again, having additional demographic information and specific differences between the genders
+        could be useuful supplementary information. 
+    </p>
+    <div id="chart3"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script> <!-- Link to the d3.js library-->
+    <script src="script1.js"></script> <!-- Linked to js file-->
+    <script src="script2.js"></script> 
+    <script src="script3.js"></script> 
+</body>
+</html>
