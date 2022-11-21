@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Charts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Assistant', sans-serif;
+        }
+        text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        p {
+            font-size: 18px;
+        }
+        hr {
+            margin: 60px 0;
+        }
+        .chart p {
+            background: #eee;
+            padding: 5px 0px 5px 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body style="background:rgb(223, 207, 190)">
+    <h1 style="color: rgb(210, 10, 10)">
+        Netflix Originals - room for improvement? Interpreting IMDB scores of Netflix 
+        Original films released as of June 2021
+    </h1>
+    <br>
+    <p>
+        I am an avid Netflix user and have witnessed how Netflix’s business strategy in recent years has 
+        shifted towards the production of its own original content versus merely hosting content from other 
+        studios. I was therefore curious to find out about how different Netflix Originals have performed 
+        based on IMDB ratings. 
+    </p>
+    <p>
+        This page contains a number of data visualizations that provide key insights on this topic 
+        and help unravel an interesting story. If you have any questions about the visualizations or any feedback
+        on the work, feel free to contact me at the following address: vidursubaiah@uchicago.edu 
+    </p>
+    <hr>
+    <h2>
+        The average Netflix Original rating of 6.3 falls below the IMDB 
+        site-wide average of 6.8 
+    </h2>
+    <p>The data indicates that since Netflix began producing its own film content, they have underperformed the average film according to movie reviewers on the IMDB platform.</p>
+    <p>The company has had mixed fortunes - producing noteworthy flops such as 'Enter the Anime' (2/10 IMDB Score) alongside record-breaking documentaries like filmmaker David Attenborough's 'A Life on Our Planet' (one of the highest rated titles of all time on the IMDB plaform with a score of 9/10) </p>
+    <div id="averageChart" class="chart"></div>
+    <hr>
+    <h2>
+        Netflix has been improving the number of successful 
+        films that they produce
+    </h2>
+    <p>Despite the overall lower than average rating, the number of Netflix Originals ranked higher than the IMDB average (6.8) has been steadily increasing over the past couple of years. (Hover over each bubble below to view the number of releases that received a higher than average rating in a given year)</p>
+    <p>In the year 2020, Netflix produced 48 titles that were rated higher than the IMDB average. This could point to an ongoing improvement in Netflix's ability to produce certain types of films that are deemed higher quality.</p>
+    <div id="yearChart" class="chart"></div>
+    <hr>
+    <h2>
+        Short form content produced by Netflix has 
+        performed notably well 
+    </h2>
+    <p>The data shows that short form films (films that have a runtime of less than 60 minutes) have been received well by movie reviewers, with median ratings consistently above the IMDB average of 6.8.</p>
+    <p>Long form content produced by Netflix does have several strong outperformers, however, there is a good deal of variation, with numerous films underperforming the IMDB average. Focusing on improving the consistency and audience engagement of these longer films would help Netflix address this weakness.</p>
+    <div id="timeChart" class="chart"></div>
+    <hr>
+    <h2>The Documentary genre has been one of Netflix's main strengths</h2>
+    <p>Documentary films produced by Netflix have performed strongly on IMDB. The average IMDB rating for Netflix documentaries stands at 6.9, which is above the IMDB sitewide 6.8 average.</p>
+    <p>This trend is especially true for longer documentaries (80+ minutes). Additionally, Netflix's top 5 highest rated films of all time have all come from the documentary genre - 'A Life on Our Planet', 'Emicida: AmarElo - It's All for Yesterday', 'Springsteen on Broadway', 'Winter on Fire: Ukraine's Fight for Freedom', and 'Taylor Swift: Reputation Stadium Tour'. This is clearly a successful niche that Netflix should look to maintain as well as further strengthen in the future.  </p>
+    <div id="documentaryChart" class="chart"></div>
+    <hr>
+    <h2>
+        Most Foreign releases have underperformed according to critics
+    </h2>
+    <p>Foreign films that have been produced by Netflix (films produced primarily in a language other than English) have mostly received lukewarm reactions on IMDB. </p>
+    <p>The average rating of these foreign films on the IMDB platform is equal to 6.0, which is well below the 6.8 sitewide average. This could indicate that Netflix needs to improve its ability to create films that take into account cultural contexts and the interests of foreign audiences.</p>
+    <div id="foreignChart" class="chart"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="horizontal-bar.js"></script>
+    <script src="bubble-chart.js"></script>
+    <script src="boxplot.js"></script>
+    <script src="scatterplot.js"></script>
+    <script src="beeswarm.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
