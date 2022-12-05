@@ -14,10 +14,13 @@
         }
         text {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 10px;
+            font-size: 12px;
         }
         p {
-            font-size: 18px;
+            font-size: 20px;
+        }
+        ul {
+            font-size: 20px;
         }
         hr {
             margin: 60px 0;
@@ -47,47 +50,141 @@
         on the work, feel free to contact me at the following address: vidursubaiah@uchicago.edu 
     </p>
     <hr>
-    <h2>
+    <h1>
+        Background - A review of Netflix and IMDB
+    </h1>
+    <img src="./images/Netflix.png">
+    <p>
+        Netflix is the world's most popular streaming service that offers a wide variety of award-winning
+        movies, TV shows, anime, documentaries, and more on thousands of internet devices. Beginning in 2015,
+        Netflix began to create 'Netflix Original' films - content that they had a large/whole part in creating
+        themselves. Netflix Original films fall into the following three main categories: 
+    </p>
+    <ul>
+        <li>
+            <b>Complete Originals</b>: These are films that have been completely produced and financed internally by Netflix production teams 
+        </li>
+        <li>
+           <b> Co-Produced Originals</b>: These are films that Netflix has co-produced with another production company but owns the rights to broadcast them as their own
+        </li>
+        <li>
+            <b>Remade Originals</b>: These are films that were originally produced by another company but whose rights have since been bought by Netflix in order to create a remake/reboot film.  
+        </li>
+    </ul>
+    <p>
+        The creation of Original content has furthermore become a key part of Netflix's business strategy. The company realized early on that major studios would restrict their TV shows and movies
+        to their own personal platforms, which would leave Netflix starved of good content. In response to this, Netflix has rapidly accelerated its spending on Original content. Originals initially
+        made up about 6.8% of Netflix's spending on content, which then quickly grew to 37.8% of all spending by 2020. Netflix has also made a statment saying that they plan on having half of their 
+        total spending to be on Original content in the near future. The analysis of Netflix Original films is therefore an extremely pertinent question to both the company and audiences worldwide. 
+    </p>
+    <br>
+    <img src="./images/IMDB.jpeg">
+    <p>
+        To analyze Netflix Original films, we turn to the one of the most famous and trusted sources of movie reviews on the web: IMDB. Internet Movie Database (IMDB), which began in 1990, is the world's 
+        most popular source for movie, TV, and celebrity content. The website was designed with the aim of helping fans explore different shows and movies and decide what to watch. To aid with the search for 
+        good content, IMDB launched the 'IMDB Score' as a feature on its website. Registered users on the IMDB platform are allowed to assign a vote (on a scale from 1 to 10) for each title that is 
+        present within the IMDB database. These votes are subsequently aggregated and translated into a single IMDB score for a particular title that can be viewed on its page. To improve the accuracy of IMDB 
+        scores, IMDB ensures that users can only cast a single vote per title and that scores are calculated using a proprietary weighted average formula. The formula ensures that although every user on the platform
+        may cast a vote, not all votes have the same effect on the final IMDB score. The formula is also designed to be resilient when unusual voting activity is observed on the platform. 
+    </p>
+    <p>
+        Given this background, it can reasonably be assumed that IMDB scores provide a good way to judge how different Netflix Original films have performed and have been received by audiences. The relationship between 
+        different films, their characteristics, and their IMDB scores, therefore form the backbone of this project and the visualizations. 
+    </p>
+    <hr>
+    <h1>
         The average Netflix Original rating of 6.3 falls below the IMDB 
         site-wide average of 6.8 
-    </h2>
+    </h1>
     <p>The data indicates that since Netflix began producing its own film content, they have underperformed the average film according to movie reviewers on the IMDB platform.</p>
     <p>The company has had mixed fortunes - producing noteworthy flops such as 'Enter the Anime' (2/10 IMDB Score) alongside record-breaking documentaries like filmmaker David Attenborough's 'A Life on Our Planet' (one of the highest rated titles of all time on the IMDB plaform with a score of 9/10) </p>
     <div id="averageChart" class="chart"></div>
     <hr>
-    <h2>
+    <h1>
         Netflix has been improving the number of successful 
         films that they produce
-    </h2>
+    </h1>
     <p>Despite the overall lower than average rating, the number of Netflix Originals ranked higher than the IMDB average (6.8) has been steadily increasing over the past couple of years. (Hover over each bubble below to view the number of releases that received a higher than average rating in a given year)</p>
-    <p>In the year 2020, Netflix produced 48 titles that were rated higher than the IMDB average. This could point to an ongoing improvement in Netflix's ability to produce certain types of films that are deemed higher quality.</p>
+    <p>In the year 2020, Netflix produced 48 titles that were rated higher than the IMDB average. This was greater than the number of above average films produced during the first three years of Original content production combined (2015-2017). This could point to an ongoing improvement in Netflix's ability to produce certain types of films that are deemed higher quality.</p>
     <div id="yearChart" class="chart"></div>
     <hr>
-    <h2>
+    <h1>
         Short form content produced by Netflix has 
         performed notably well 
-    </h2>
-    <p>The data shows that short form films (films that have a runtime of less than 60 minutes) have been received well by movie reviewers, with median ratings consistently above the IMDB average of 6.8.</p>
-    <p>Long form content produced by Netflix does have several strong outperformers, however, there is a good deal of variation, with numerous films underperforming the IMDB average. Focusing on improving the consistency and audience engagement of these longer films would help Netflix address this weakness.</p>
+    </h1>
+    <p>The data shows that short form films (films that have a runtime of less than 60 minutes) have been received well by movie reviewers, with median ratings consistently above the IMDB average of 6.8. These short form films also exhibit low levels of variation in their IMDB scores (when comparing the 75th percentile to the 25th percentile), showing that they consistently obtain strong IMDB scores as a group. </p>
+    <p>Long form content produced by Netflix does have several strong outperformers, however, there is a greater deal of variation, with numerous films underperforming the IMDB average. The lower quartiles of these long form films are observed to underperform the IMDB average by a significant margin. Focusing on improving the consistency and audience engagement of these longer films would help Netflix address this weakness.</p>
     <div id="timeChart" class="chart"></div>
     <hr>
-    <h2>The Documentary genre has been one of Netflix's main strengths</h2>
-    <p>Documentary films produced by Netflix have performed strongly on IMDB. The average IMDB rating for Netflix documentaries stands at 6.9, which is above the IMDB sitewide 6.8 average.</p>
-    <p>This trend is especially true for longer documentaries (80+ minutes). Additionally, Netflix's top 5 highest rated films of all time have all come from the documentary genre - 'A Life on Our Planet', 'Emicida: AmarElo - It's All for Yesterday', 'Springsteen on Broadway', 'Winter on Fire: Ukraine's Fight for Freedom', and 'Taylor Swift: Reputation Stadium Tour'. This is clearly a successful niche that Netflix should look to maintain as well as further strengthen in the future.  </p>
+    <h1>The Documentary genre has been one of Netflix's main strengths</h1>
+    <p>Documentary films produced by Netflix have performed strongly on IMDB. The average IMDB rating for Netflix documentaries stands at 6.9, which is above the IMDB sitewide 6.8 average. Furthermore, documentaries are the strongest genre for Netflix amongst all types of original film content that it produces.</p>
+    <p>This trend of outperformance is especially true for longer documentaries (80+ minutes). Additionally, Netflix's top 5 highest rated films of all time have all come directly from the documentary genre - 'A Life on Our Planet', 'Emicida: AmarElo - It's All for Yesterday', 'Springsteen on Broadway', 'Winter on Fire: Ukraine's Fight for Freedom', and 'Taylor Swift: Reputation Stadium Tour'. This is clearly a successful niche that Netflix should look to maintain as well as further strengthen in the future.  </p>
     <div id="documentaryChart" class="chart"></div>
     <hr>
-    <h2>
+    <h1>
         Most Foreign releases have underperformed according to critics
-    </h2>
-    <p>Foreign films that have been produced by Netflix (films produced primarily in a language other than English) have mostly received lukewarm reactions on IMDB. </p>
-    <p>The average rating of these foreign films on the IMDB platform is equal to 6.0, which is well below the 6.8 sitewide average. This could indicate that Netflix needs to improve its ability to create films that take into account cultural contexts and the interests of foreign audiences.</p>
+    </h1>
+    <p>Foreign films that have been produced by Netflix (films produced primarily in a language other than English) have mostly received lukewarm reactions on IMDB. This is bad news for Netflix as the company has often said that they want to "scale globally" - by producing content in one region and marketing it globally. </p>
+    <p>The average rating of these foreign films on the IMDB platform is equal to 6.0, which is well below the 6.8 sitewide average. This could indicate that Netflix needs to first improve its ability to create films that take into account cultural contexts and the interests of foreign audiences before looking to find wider appeal.</p>
     <div id="foreignChart" class="chart"></div>
+    <hr>
+    <h1>
+        Process - The how and why?
+    </h1>
+    <p>
+        I was interested in this topic because I love movies and have engaged strongly with Netflix content over the past couple of years. While initially going throught the dataset, I recognized 
+        a lot of the movies and was therefore interested in digging deeper. Additionally, streaming movies is a very current and popular trend that isn't going away any time soon, which made this 
+        an ideal topic to do further research on. 
+    </p>
+    <p>
+        There were several datasets online that related to Netflix data. However, most of these datasets were too narrow in scope. They usually focused in on a specific genre and set of films from a 
+        specific year. The dataset that I ended up choosing was a great choice because it was not only broad in scope (covered multiple genres and release years) but was also the only dataset that had 
+        data purely on Netflix Original content. Furthemore, the IMDB scores in the dataset gave the data an added dimension. This allowed me to frame much better questions relating to Netflix's original content strategy. 
+    </p>
+    <p>
+        The dataset that I chose is titled 'Netflix Original Films & IMDB Scores' and was obtained from <a href="https://www.kaggle.com/datasets/luiscorter/netflix-original-films-imdb-scores?resource=download)">Kaggle</a>. The dataset contains information on all Netflix original films, documentaries, and specials that have been released as of June 1st 2021. The dataset contains the following important information: film title, film genre, film premiere date, film runtime, IMDB score, and languages the film is available in.
+        The dataset was created by scraping data from the 'Netflix Originals' <a href="https://en.wikipedia.org/wiki/Lists_of_Netflix_original_films">Wikipedia page</a> which was then combined with a dataset of matching IMDB scores.
+    </p>
+    <p>
+        Since my dataset consisted of only Netflix Original films and was a complete dataset (contained all original films since the beginning of Netflix's foray into original content), I knew that I could define a story around how 
+        Netflix Original films have performed since their conception. I decided to pivot away from only exploring the film data and instead looked for visualizations and insights that allowed me to combine both the film data and IMDB scores.
+    </p>
+    <p>
+        One of the concerns I had about the data was the data collection method. The csv file was created by an individual who scraped data from Wikipedia and then combined it with IMDB data. While these two sources of data are mostly reliable, there could potentially have been errors or omissions during the data scraping process. I, however, did not find any gaps in the dataset and the number of dataset rows aligned 
+        with the number of Netflix Original films that Netflix had produced over the same time period. 
+    </p>
+    <p>
+        In terms of ethical considerations, there wasn't anything that stood out as a major concern. All the data points from the dataset were collated from public sources that are readily available to anyone looking for them. The one disclaimer that needs to be made here is the fact that a bad IMDB score does not necessarily indicate a 'bad' movie, since quality is indeed subjective and IMDB scores are simply one factor 
+        to consider when judging the quality of a film. 
+    </p>
+    <p>
+        In terms of chart choices, I first chose a horizontal bar chart because it helped indicate hierarchy and clearly showed that the Original films had underperformed the average film on the IMDB platform. I then chose a bubble chart because it provided a clear visual representation of the number of above average releases through the size of the bubbles. The interactivity of the bubble chart also helped make the difference between the years more apparent.
+        I then used a boxplot because it is one of the best graphs to show variation. The boxplot made it clear to see how short form content had performed consistently well compared to the larger variation in performance seen in long form content. I then utilized a scatter plot to demonstrate the superior performance of documentary films. The bunching of points at the top of the scatter plot helped make it clear to the reader that the documentary 
+        genre has multiple titles that have been rated well above average. Finally, I chose a beeswarm chart as I thought it was a creative way to show that foreign films have underperformed. By looking at the heights of the points below the IMDB average, it is clear to the reader that foreign films have not been received particularly well. 
+    </p>
+    <p>
+        Overall my greatest takeaway from the project was the importance of being able to intelligently weave data visualizations into the context of a larger story. I learned the importance of chart selection, guided storytelling, element layout, and themes. I also gained an appreciation for the power of D3.js and the efforts of the open source data visualization community. The project ultimately made me realize how small details add up to create a seamless storytelling and visualization experience. 
+    </p>
+    <hr>
+    <h1>
+        Data Sources 
+    </h1>
+    <p>
+        <a href="https://www.netflix.com/">Netflix</a> <br>
+        <a href="https://netflix.fandom.com/wiki/Netflix_Original">Netflix Fandom</a> <br>
+        <a href="https://variety.com/2021/digital/news/netflix-content-spending-2021-amortized-1235072612/">Netflix Content Spending</a> <br>
+        <a href="https://help.imdb.com/article/imdb/general-information/what-is-imdb/G836CY29Z4SGNMK5?ref_=helpart_nav_1#">IMDB Overview</a> <br>
+        <a href="https://help.imdb.com/article/imdb/track-movies-tv/ratings-faq/G67Y87TFYYP6TWAV#">IMDB Score Calculation</a> <br>
+        <a href="https://screenrant.com/netflix-originals-content-comparison/">Netflix Image</a> <br>
+        <a href="https://www.addictivetips.com/web/make-imdb-ratings-more-meaningful-by-checking-out-the-voter-demographic/">IMDB Image</a> <br>
+    </p>
+    <hr>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="horizontal-bar.js"></script>
-    <script src="bubble-chart.js"></script>
-    <script src="boxplot.js"></script>
-    <script src="scatterplot.js"></script>
-    <script src="beeswarm.js"></script>
+    <script src="./charts/horizontal-bar.js"></script>
+    <script src="./charts/bubble-chart.js"></script>
+    <script src="./charts/boxplot.js"></script>
+    <script src="./charts/scatterplot.js"></script>
+    <script src="./charts/beeswarm.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-d3.csv("NetflixOriginals.csv").then(data => {
-    // Always start by console.logging the data
+d3.csv("./data/NetflixOriginals.csv").then(data => {
+    // console.logging the data
     console.log("Raw data", data);
   
     // Creating an array to find the highest and lowest rated Netflix Original 
