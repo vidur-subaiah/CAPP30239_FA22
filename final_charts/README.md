@@ -6,7 +6,9 @@ I am an avid Netflix user and have witnessed how Netflix’s business strategy i
 This repository contains a number of data visualizations that provide key insights on this topic and help unravel an interesting story. If you have any questions about the visualizations or any feedback on the work, feel free to contact me at the following address: vidursubaiah@uchicago.edu
 
 ## About the Dataset
-The dataset used is titled 'Netflix Original Films & IMDB Scores' and was obtained from Kaggle. The dataset was created by scraping data from the 'Netflix Originals' Wikipedia page which was then combined with a dataset of matching IMDB scores.
+The dataset used is titled 'Netflix Original Films & IMDB Scores' and was obtained from Kaggle.  The dataset was created by scraping data from the 'Netflix Originals' Wikipedia page which was then combined with a dataset of matching IMDB scores.
+
+The dataset contains information on all Netflix original films, documentaries, and specials that have been released as of June 1st 2021. The dataset contains the following important information: film title, film genre, film premiere date, film runtime, IMDB score, and languages the film is available in.
 
 ## How to Navigate the Project (Directory Structure)
 The repository consists of three main directories:
